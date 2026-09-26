@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ThesisPoint Research | Independent equity research</title>
+<meta name="description" content="Independent initiations on US equities, each with a rating, a price target and the risks that would change our mind.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<!-- Traffic for TPR Back-End: uncomment once the back-end is live.
+<script defer src="https://admin.thesispointresearch.com/tpr-track.js" data-endpoint="https://admin.thesispointresearch.com/api/track"></script>
+-->
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="assets/logo.png" alt="ThesisPoint Research" width="256" height="48"></a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="research.html">Research</a>
+      <a href="about.html">About</a>
+      <a class="btn btn-dark" href="#subscribe">Subscribe</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="wrap hero">
+  <div class="hero-top">
+    <h1 class="h-display">Research for the gap between price and value.</h1>
+    <div class="hero-aside">
+      <p class="lede">Independent initiations on US equities. Every report carries a rating, a price target, and the risks that would change our mind.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="research.html">Browse the research</a>
+        <a class="btn" href="#subscribe">Get reports by email</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="gap" id="gap">
+    <div class="gap-top">
+      <div class="gap-pick">
+        <p>Pick a recent Reco to see the gap we are underwriting.</p>
+        <div class="picker" id="picker" role="group" aria-label="Recent Recos"></div>
+      </div>
+      <div class="upside">
+        <div class="big num" id="upside" aria-live="polite"></div>
+        <p id="upside-note">upside to our target on the day we published</p>
+      </div>
+    </div>
+
+    <div class="ruler" id="ruler" aria-hidden="true">
+      <div class="line"></div>
+      <div class="bar"></div>
+      <div class="dot"></div>
+      <div class="ring"></div>
+      <div class="label price"><small>Price when published</small><strong></strong></div>
+      <div class="label target"><small>Our target</small><strong></strong></div>
+    </div>
+
+    <div class="gap-foot">
+      <div>
+        <p class="meta" id="gap-meta"></p>
+        <p class="thesis" id="gap-thesis"></p>
+      </div>
+      <a class="btn" id="gap-link" href="research.html">Read the report</a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap reads" id="reads-section">
+  <div class="section-head rule-top">
+    <h2 class="h-section">Longer reads</h2>
+    <a class="sans" style="font-size:17px;font-weight:600" href="research.html?type=article">All articles</a>
+  </div>
+  <div class="reads-grid" id="reads"></div>
+</section>
+
+<section id="subscribe" class="wrap subscribe">
+  <div>
+    <h2 class="h-section">Get the next report the day it’s published</h2>
+    <p class="lede">A weekly note, plus an email whenever a new initiation goes out. Free.</p>
+    <form class="sub-form" data-subscribe="homepage" novalidate>
+        <label for="email-home">Email address</label>
+        <div class="row">
+          <input id="email-home" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          <button class="btn btn-dark" type="submit">Subscribe</button>
+        </div>
+        <p class="status" role="status" aria-live="polite"></p>
+      </form>
+  </div>
+  <div class="team">
+    <h3>Who writes it</h3>
+    <div class="person">
+      <div class="avatar" aria-hidden="true">RB</div>
+      <div><a href="https://www.linkedin.com/in/ruhaan-bajaj-a69631305/">Ruhaan Bajaj</a><p>Co-founder and research lead.</p></div>
+    </div>
+    <div class="person">
+      <div class="avatar alt" aria-hidden="true">VM</div>
+      <div><a href="https://www.linkedin.com/in/vamitt/">Vansh Mittal</a><p>Co-founder and research lead.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="assets/logo.png" alt="ThesisPoint Research" width="235" height="44">
+        <p>Independent research on US equities.</p>
+      </div>
+      <div class="foot-cols">
+        <div><span>Research</span><a href="research.html">Library</a><a href="research.html?type=stock_report">Stock reports</a><a href="research.html?type=article">Articles</a></div>
+        <div><span>Company</span><a href="about.html">About</a><a href="https://www.thesispointresearch.com/contact">Contact</a><a href="https://www.thesispointresearch.com/disclaimer">Disclaimer</a></div>
+        <div><span>Follow</span><a href="https://www.linkedin.com/company/thesispoint-research">LinkedIn</a><a href="https://www.instagram.com/thesispointresearch">Instagram</a></div>
+      </div>
+    </div>
+    <p class="disclaimer">© 2026 ThesisPoint Research. Published for information only; nothing on this site is investment advice or a recommendation to buy or sell a security. ThesisPoint Research is not registered with SEBI as a research analyst.</p>
+  </div>
+</footer>
+<script src="assets/data.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/home.js"></script>
+</body>
+</html>
